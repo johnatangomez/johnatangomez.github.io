@@ -11,7 +11,8 @@
         <div class="container">
             <h1 class="fade-in">Johnatan Gómez</h1>
             <p class="subtitle fade-in delay-1">Arquitecto de Software | Desarrollador Full Stack</p>
-            <p class="location fade-in delay-2">Colombia 🇨🇴 | +3 años en Django, React, Bases de Datos y DevOps</p>
+            <p class="location fade-in delay-2">Colombia 🇨🇴 | +4 años en Django, React, Bases de Datos y DevOps</p>
+            <!--<button id="toggle-language" class="lang-toggle fade-in delay-3">English Version</button>-->
         </div>
     </header>
 
@@ -19,7 +20,7 @@
         <section class="card fade-in delay-3">
             <h2>👨‍💻 Perfil Profesional</h2>
             <p>
-                Soy un desarrollador Full Stack con más de 3 años de experiencia en Django y React, y habilidades en arquitectura de software, microservicios, Spring Boot, bases de datos PostgreSQL y MySQL, además de experiencia liderando equipos y administrando servidores Linux.
+                Soy un desarrollador Full Stack con más de 4 años de experiencia en Django y React, y habilidades en arquitectura de software, microservicios, Spring Boot, bases de datos PostgreSQL y MySQL, además de experiencia liderando equipos y administrando servidores Linux.
             </p>
         </section>
 
@@ -39,13 +40,13 @@
         <section class="card fade-in delay-5">
             <h2>💼 Experiencia</h2>
             <ul class="experience">
-                <li>
-                    <strong>Desarrollador Django Senior</strong> – SIATA (2021 - Actualidad)<br>
-                    Liderazgo técnico, diseño de APIs REST, despliegue en servidores Linux.
+               <li>
+                <strong>Desarrollador Django Senior</strong> – SIATA (2020 - Actualidad)<br>
+                Responsable del desarrollo de aplicaciones web usando Django y Django REST Framework. Diseñé y mantuve arquitecturas modulares, integré APIs de terceros y gestioné el rendimiento de bases de datos PostgreSQL y MySQL. Automatización de tareas con Celery y despliegue en servidores Linux usando Docker. También lideré revisiones de código, sesiones de estimación de tareas y mentoría a desarrolladores junior.
                 </li>
                 <li>
                     <strong>Líder de Equipo</strong> – SIATA <br>
-                    Arquitectura escalable, manejo de crisis y planificación de recursos.
+                    Diseñé y lideré la implementación de una arquitectura escalable para una solución en la nube sobre Azure. Coordine equipos multidisciplinarios bajo metodologías ágiles (Scrum), asegurando entregas iterativas, integración continua (CI/CD) y alta disponibilidad del sistema. Manejé crisis técnicas, controlé tiempos y lideré reuniones con stakeholders para ajustar objetivos del proyecto y priorizar funcionalidades clave.
                 </li>
             </ul>
         </section>
@@ -57,14 +58,84 @@
 
         <section class="card fade-in delay-7">
             <h2>📫 Contacto</h2>
-            <p>Email: 100gomex@gmail.com</p>
-            <p>LinkedIn: https://www.linkedin.com/in/johnatan-g%C3%B3mez-55905a2b5/</p>
-            <p>GitHub: https://github.com/johnatangomez</p>
+            <p><a href="mailto:100gomex@gmail.com">100gomex@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/johnatan-gómez-55905a2b5" target="_blank">LinkedIn</a></p>
+            <p><a href="https://github.com/johnatangomez" target="_blank">GitHub</a></p>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>© 2025 Johnatan Gómez - Desarrollador Full Stack</p>
-    </footer>
+    <!-- English -->
+    <section class="card fade-in delay-4 lang-en hidden">
+      <h2>👨‍💻 Professional Profile</h2>
+      <p>
+        I am a Full Stack developer with over 4 years of experience in Django and React. I specialize in software architecture, microservices, Spring Boot, PostgreSQL, and MySQL. I also have experience leading development teams and managing Linux servers.
+      </p>
+    </section>
+
+    <section class="card fade-in delay-5 lang-en hidden">
+      <h2>🧰 Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Django / Python</li>
+        <li>React / JavaScript</li>
+        <li>Spring Boot / Java</li>
+        <li>PostgreSQL / MySQL</li>
+        <li>Docker / Git / Linux Server</li>
+        <li>Software Architecture</li>
+        <li>Agile Methodologies (Scrum)</li>
+      </ul>
+    </section>
+
+    <section class="card fade-in delay-6 lang-en hidden">
+      <h2>💼 Experience</h2>
+      <ul class="experience">
+        <li>
+          <strong>Senior Django Developer</strong> – SIATA (2020 - Present)<br>
+          In charge of web application development using Django and Django REST Framework. Designed and maintained modular software architectures, integrated third-party APIs, and optimized PostgreSQL and MySQL database performance. Automated background tasks with Celery and deployed applications using Docker on Linux servers. Conducted code reviews, task estimation meetings, and mentored junior developers.
+        </li>
+        <li>
+          <strong>Project Lead</strong> – SIATA<br>
+          .Led the design and implementation of a scalable architecture hosted on Microsoft Azure. Coordinated cross-functional teams using Agile methodologies (Scrum), ensuring continuous delivery, CI/CD pipelines, and system high availability. Handled technical crisis management, timeline adjustments, and facilitated stakeholder meetings to align priorities and deliver impactful features.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card fade-in delay-7 lang-en hidden">
+      <h2>🎓 Education</h2>
+      <p>Systems Engineer<br>Antioquia University</p>
+    </section>
+
+    <section class="card fade-in delay-8 lang-en hidden">
+      <h2>📫 Contact</h2>
+      <p><a href="mailto:100gomex@gmail.com">100gomex@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/johnatan-gómez-55905a2b5" target="_blank">LinkedIn</a></p>
+      <p><a href="https://github.com/johnatangomez" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Johnatan Gómez - Desarrollador Full Stack</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-language');
+    const esSections = document.querySelectorAll('.lang-es');
+    const enSections = document.querySelectorAll('.lang-en');
+
+    let currentLang = 'es';
+
+    toggleBtn.addEventListener('click', () => {
+      if (currentLang === 'es') {
+        esSections.forEach(el => el.classList.add('hidden'));
+        enSections.forEach(el => el.classList.remove('hidden'));
+        toggleBtn.textContent = 'Versión en Español';
+        currentLang = 'en';
+      } else {
+        enSections.forEach(el => el.classList.add('hidden'));
+        esSections.forEach(el => el.classList.remove('hidden'));
+        toggleBtn.textContent = 'English Version';
+        currentLang = 'es';
+      }
+    });
+  </script>
 </body>
 </html>

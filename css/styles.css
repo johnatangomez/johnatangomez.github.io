@@ -132,3 +132,23 @@ main {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
+
+.hidden {
+  display: none;
+}
+
+.lang-toggle {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #00d4ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background-color: #00b0d4;
+}
